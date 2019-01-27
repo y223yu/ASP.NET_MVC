@@ -1,0 +1,45 @@
+﻿@model IEnumerable<YYSail.Models.AnnualFeeStructure>
+
+@{
+    ViewData["Title"] = "Annual Fee by Year";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h2 style="font-weight: bold; color: red">@TempData["error"]</h2> @*error TempData if edit prior years' record*@
+
+<p>
+    <a asp-action="Create">Create New Annual Fee Record</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @*only show Year and AnnualFee*@
+            <th>
+                @Html.DisplayNameFor(model => model.AnnualFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @*only show Year and AnnualFee*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnnualFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Year">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Year">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Year">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\bin\Debug\netcoreapp2.1\YYClassLibrary.deps.json
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\bin\Debug\netcoreapp2.1\YYClassLibrary.dll
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.csprojAssemblyReference.cache
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.csproj.CoreCompileInputs.cache
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.AssemblyInfoInputs.cache
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.AssemblyInfo.cs
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\bin\Debug\netcoreapp2.1\YYClassLibrary.pdb
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.dll
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\Assignment 4\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.pdb
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\bin\Debug\netcoreapp2.1\YYClassLibrary.deps.json
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\bin\Debug\netcoreapp2.1\YYClassLibrary.dll
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\bin\Debug\netcoreapp2.1\YYClassLibrary.pdb
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.csprojAssemblyReference.cache
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.csproj.CoreCompileInputs.cache
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.AssemblyInfoInputs.cache
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.AssemblyInfo.cs
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.dll
+C:\Conestoga College\Level 3\PROG2230-Programming Microsoft Web Technology\Assignments\YYSail\YYClassLibrary\obj\Debug\netcoreapp2.1\YYClassLibrary.pdb

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<YYSail.Models.Member>
+
+@{
+    ViewData["Title"] = "Member List";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h2 style="font-weight: bold; color: red">@TempData["politeMessage"]</h2>
+
+<h2>@TempData["CreateMessage"]</h2>
+
+<p>
+    <a asp-action="Create" >Create New Member Record</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HomePhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProvinceCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearJoined)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskExempt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UseCanadaPost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                <a asp-controller="YYMemberships" asp-action="Index" asp-route-id="@item.MemberId" asp-route-fullName="@item.FullName">
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HomePhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProvinceCodeNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearJoined)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskExempt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UseCanadaPost)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MemberId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MemberId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MemberId">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
