@@ -1,0 +1,47 @@
+﻿@model List<Microsoft.AspNetCore.Identity.IdentityRole>
+    @{
+    ViewData["Title"] = "Index";
+    }
+    <p style="font-weight: bold;" class="alert-danger">@TempData["role_error_message"]</p>
+    <h2>List of Roles</h2>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>
+                    Role Id
+                </th>
+                <th>
+                    Role Name
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="RoleDetails" asp-route-id="@item.Id">Users in Role</a>
+                    @*@if ((string)ViewData["isAdministraor"] == "Valid")*@
+                    @if (!item.Name.Contains("admin"))
+                    {
+                        <span> | </span><a asp-action="Delete" asp-route-id="@item.Name">Delete this Role</a>
+
+                    }
+                </td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+
+

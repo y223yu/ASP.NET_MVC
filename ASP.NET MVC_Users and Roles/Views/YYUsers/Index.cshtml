@@ -1,0 +1,85 @@
+﻿@model List<YSSail.ModelView.SailUser>
+@{
+    ViewData["Title"] = "Index";
+}
+<p style="font-weight: bold;" class="alert-danger">@TempData["user_error_message"]</p>
+
+<h2>List of Users</h2>
+
+<table class="table">
+    <tbody>
+        <tr>
+            <th>
+                UserName
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Is a member
+            </th>
+            <th>
+                Is a staff
+            </th>
+            <th>
+                Is an Admin
+            </th>
+            <th>
+                Is locally Authenticated
+            </th>
+            <th>
+                <a asp-action="LockedOutFilter">Locked Out Date</a>
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.user.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.user.Email)
+            </td>
+            <td>
+                @Html.CheckBoxFor(modelItem => item.isMember, new
+           { disabled = "disabled", @readonly = "readonly" })
+            </td>
+
+            <td>
+                @Html.CheckBoxFor(modelItem => item.isStaff, new
+           { disabled = "disabled", @readonly = "readonly" })
+            </td>
+
+            <td>
+                @Html.CheckBoxFor(modelItem => item.isAdministrator, new
+           { disabled = "disabled", @readonly = "readonly" })
+            </td>
+            <td>
+                @Html.CheckBoxFor(modelItem => item.user.TwoFactorEnabled, new
+           { disabled = "disabled", @readonly = "readonly" })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.user.LockoutEnd)
+            </td>
+            <td>
+                @if (item.user.LockoutEnd.HasValue)
+                {
+                    <a asp-action="UnlockUser" asp-route-id="@item.user.Id">Unlock User</a>
+                }
+                else
+                {
+                    <a asp-action="LockUser" asp-route-id="@item.user.Id">Lock User</a>
+                }
+                |   <a asp-action="AddToMemberRole" asp-route-id="@item.user.Id">Add To Member Role</a> |
+            </td>
+        </tr>
+        }
+
+    </tbody>
+</table>
+
+
+
